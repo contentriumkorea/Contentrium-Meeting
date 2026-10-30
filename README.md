@@ -11,7 +11,7 @@
 
 Windows x64 PC, Plaud 계정과 인터넷 연결이 필요합니다. 로컬 전사 모델은 설정에서 선택하여 별도로 내려받습니다.
 
-<a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest/download/ContentriumMeetingSetup.exe"><img src="assets/download-installer.png" alt="Windows 설치파일 다운로드" width="330" height="48"></a>
+<a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest/download/ContentriumMeetingOnlineSetup.exe"><img src="assets/download-installer.png" alt="Windows 설치파일 다운로드" width="330" height="48"></a>
 <a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest/download/ContentriumMeetingPortable.zip"><img src="assets/download-portable.png" alt="포터블 ZIP 다운로드" width="290" height="48"></a>
 
 1. 설치파일을 실행하거나 포터블 ZIP을 풀고 `PlaudDesktop.exe`를 실행합니다.
