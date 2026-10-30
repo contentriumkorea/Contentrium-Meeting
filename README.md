@@ -2,7 +2,7 @@
 
 <h1 align="center">Contentrium Meeting</h1>
 <p align="center"><strong>녹음을 모으고, 전사하고, 요약하고, 공유하세요.</strong><br>Plaud 클라우드 녹음을 PC에서 관리하는 개인 사용용 Windows 프로그램입니다.</p>
-<p align="center"><a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest"><img src="https://img.shields.io/github/v/release/contentriumkorea/Contentrium-Meeting?color=333333" alt="Latest release"></a> <img src="https://img.shields.io/badge/Windows-x64-333333" alt="Windows x64"> <a href="LICENSE"><img src="https://img.shields.io/badge/Use-Personal%20%26%20Noncommercial-555555" alt="Personal and noncommercial"></a></p>
+<p align="center"><a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest"><img src="assets/badge-release.png" width="190" height="38" alt="Latest release"></a> <img src="assets/badge-windows.png" width="180" height="38" alt="Windows x64"> <a href="LICENSE"><img src="assets/badge-use.png" width="310" height="38" alt="Personal and noncommercial"></a></p>
 <p align="center"><a href="#빠르게-시작하기">설치하기</a> · <a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest">다운로드</a> · <a href="#사용-모습">사용 모습</a> · <a href="GUIDE.md">상세 안내</a></p>
 
 ---
@@ -11,8 +11,8 @@
 
 Windows x64 PC, Plaud 계정과 인터넷 연결이 필요합니다. 로컬 전사 모델은 설정에서 선택하여 별도로 내려받습니다.
 
-[![설치형 다운로드](https://img.shields.io/badge/Download-Windows%20Installer-252525?style=for-the-badge)](https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest/download/ContentriumMeetingSetup.exe)
-[![포터블 다운로드](https://img.shields.io/badge/Download-Portable%20ZIP-555555?style=for-the-badge)](https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest/download/ContentriumMeetingPortable.zip)
+<a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest/download/ContentriumMeetingSetup.exe"><img src="assets/download-installer.png" alt="Windows 설치파일 다운로드" width="330" height="48"></a>
+<a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest/download/ContentriumMeetingPortable.zip"><img src="assets/download-portable.png" alt="포터블 ZIP 다운로드" width="290" height="48"></a>
 
 1. 설치파일을 실행하거나 포터블 ZIP을 풀고 `PlaudDesktop.exe`를 실행합니다.
 2. 설정에서 Plaud 연결과 저장 경로를 지정합니다.
