@@ -1,7 +1,7 @@
-<p align="center"><img src="assets/cover.svg" alt="Contentrium Meeting — 녹음에서 기록과 공유까지" width="100%"></p>
+<p align="center"><img src="assets/cover.svg" alt="Contentrium Meeting — 녹음에서 기록과 정리까지" width="100%"></p>
 
 <h1 align="center">Contentrium Meeting</h1>
-<p align="center"><strong>녹음을 모으고, 전사하고, 요약하고, 공유하세요.</strong><br>Plaud 클라우드 녹음을 PC에서 관리하는 개인 사용용 Windows 프로그램입니다.</p>
+<p align="center"><strong>녹음을 모으고, 전사하고, 요약하세요.</strong><br>Plaud 클라우드 녹음을 PC에서 관리하는 개인 사용용 Windows 프로그램입니다.</p>
 <p align="center"><a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest"><img src="assets/badge-release.png" width="190" height="38" alt="Latest release"></a> <img src="assets/badge-windows.png" width="180" height="38" alt="Windows x64"> <a href="LICENSE"><img src="assets/badge-use.png" width="310" height="38" alt="Personal and noncommercial"></a></p>
 <p align="center"><a href="#빠르게-시작하기">설치하기</a> · <a href="https://github.com/contentriumkorea/Contentrium-Meeting/releases/latest">다운로드</a> · <a href="#사용-모습">사용 모습</a> · <a href="GUIDE.md">상세 안내</a></p>
 
@@ -24,14 +24,14 @@ Windows x64 PC, Plaud 계정과 인터넷 연결이 필요합니다. 로컬 전�
 
 | 01 · 모으기 | 02 · 이해하기 | 03 · 활용하기 |
 | :--- | :--- | :--- |
-| **Plaud 녹음 자동 동기화** | **로컬 전사와 화자 구분** | **요약·검색·공유** |
+| **Plaud 녹음 자동 동기화** | **로컬 전사와 화자 구분** | **요약·검색·내보내기** |
 | 날짜별 저장, 폴더, 핀과 정렬 | 한국어·영어·일본어, GPU 우선 처리 | AI 요약, 녹음 기반 질문, 전사 클릭 재생 |
 
 ## 사용 모습
 
-<p align="center"><img src="assets/workflow.svg" alt="동기화부터 로컬 전사, 요약, 내보내기와 공유까지의 기능 흐름도" width="880"></p>
+<p align="center"><img src="assets/workflow.svg" alt="동기화부터 로컬 전사, 요약, 내보내기까지의 기능 흐름도" width="880"></p>
 
-**PC에서 전사를 만들고, 완료된 기록을 요약과 공유로 연결합니다.**
+**PC에서 전사를 만들고, 완료된 기록을 요약하고 내보냅니다.**
 
 위 이미지는 실제 녹음이나 계정 정보를 포함하지 않은 기능 흐름도입니다.
 
@@ -59,7 +59,7 @@ Windows x64 PC, Plaud 계정과 인터넷 연결이 필요합니다. 로컬 전�
 
 ```text
 Plaud 연결 → 저장 경로 선택 → 전사 모델 준비 → AI 연결
-새 녹음 동기화 → 자동 전사 → 자동 요약 → 필요할 때 내보내기·공유
+새 녹음 동기화 → 자동 전사 → 자동 요약 → 필요할 때 내보내기
 ```
 
 ## 적용 범위와 제한
@@ -68,18 +68,18 @@ Plaud 연결 → 저장 경로 선택 → 전사 모델 준비 → AI 연결
 - 음성 인식·화자 구분·요약은 오류가 있을 수 있습니다. 과도한 문장 반복은 차단하며 중요한 내용은 원음과 대조하세요.
 - 지원 NVIDIA GPU를 사용할 수 있으면 우선 사용하며, 환경에 따라 CPU로 처리할 수 있습니다.
 - AI 요약에는 본인 API 키 또는 앱에서 지원하는 계정 연결이 필요합니다. API 사용료와 서비스 제한은 해당 계정에 적용됩니다.
-- 공유는 선택한 음성·전사·요약을 contentrium.com에 업로드합니다. 최초 공유 시 별도 웹사이트 로그인이 필요할 수 있습니다. 링크를 가진 사람은 열람할 수 있고 생성 후 7일이 지나면 접근이 차단됩니다.
-- 웹 공유에는 저장 용량과 업로드 개수 제한이 있습니다. 모델 파일과 사용자 인증정보는 배포 파일에 포함하지 않습니다.
+- 공개 배포용 공유 서비스는 준비 중입니다. 링크 생성·재생과 7일 후 자동 삭제 검증이 끝나기 전까지 공유 기능을 사용하지 마세요. 공개 배포본의 공유 서비스는 개인 홈페이지와 분리할 예정입니다.
+- 모델 파일과 사용자 인증정보는 배포 파일에 포함하지 않습니다.
 - 설치파일은 현재 코드 서명이 없습니다. 새 파일에 대해 Windows가 평판 확인을 표시할 수 있습니다.
 
 <details><summary><strong>상세 안내와 검증 범위</strong></summary>
 
-자동 처리, 반복 전사 차단, 공유 업로드와 접근 제어를 검증했습니다. 실제 사이트에서 합성 음성의 링크 생성·재생·구간 이동·삭제 후 차단을 확인했습니다. 설치 패키지와 실행 중인 설치본의 파일 해시가 일치합니다. 모든 PC 환경의 최초 로그인·드라이버·모델 설치를 보증하지 않습니다.
+자동 처리와 반복 전사 차단을 검사했습니다. 공유 기능의 실제 공개 링크 재생과 만료 후 자동 삭제는 검증 중입니다. 모든 PC 환경의 최초 로그인·드라이버·모델 설치를 보증하지 않습니다.
 
 </details>
 <details><summary><strong>English overview</strong></summary>
 
-Contentrium Meeting is a Windows x64 application for personal, noncommercial use. It synchronizes Plaud recordings, provides local multilingual transcription and speaker diarization, and connects your own AI account for summaries and recording-based chat. Optional web shares expire after seven days. Models and account credentials are not bundled. This repository distributes application binaries and documentation, not the application source tree.
+Contentrium Meeting is a Windows x64 application for personal, noncommercial use. It synchronizes Plaud recordings, provides local multilingual transcription and speaker diarization, and connects your own AI account for summaries and recording-based chat. Web sharing is not yet verified for public use. Models and account credentials are not bundled. This repository distributes application binaries and documentation, not the application source tree.
 
 </details>
 
